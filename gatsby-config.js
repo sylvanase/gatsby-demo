@@ -5,6 +5,21 @@
  */
 
 module.exports = {
+  siteMetadata: {
+    title: "hello gatsby",
+    author: "sylvanas",
+  },
   /* Your site config here */
-  plugins: [],
+  plugins: [
+    {
+      resolve: "gatsby-source-filesystem",
+      options: {
+        name: "json",
+        path: `${__dirname}/json/`,
+      },
+    },
+    "gatsby-transformer-json",
+    "gatsby-plugin-sharp",
+    "gatsby-transformer-sharp",
+  ],
 }
