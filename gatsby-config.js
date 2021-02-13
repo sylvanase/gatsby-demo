@@ -34,19 +34,20 @@ module.exports = {
         plugins: ["gatsby-remark-images"],
       },
     },
-    // {
-    //   resolve: "gatsby-source-strapi",
-    //   options: {
-    //     apiURL: `http://localhost:1337`,
-    //     contentTypes: [`posts`],
-    //   },
-    // },
     {
-      resolve: "gatsby-source-mystrapi",
+      resolve: "gatsby-source-strapi",
       options: {
         apiURL: `http://localhost:1337`,
         contentTypes: [`posts`],
       },
     },
+    // {
+    //   resolve: "gatsby-source-mystrapi",
+    //   options: {
+    //     apiURL: `http://localhost:1337`,
+    //     contentTypes: [`posts`],
+    //   },
+    // },
+    "gatsby-plugin-react-helmet",
   ],
 }
