@@ -1,6 +1,7 @@
 import React from "react"
 import { Link, graphql } from "gatsby"
 import SEO from "../components/SEO"
+import styles from "../styles/index.module.less"
 
 export default function Home({ data }) {
   console.log(data, "home")
@@ -8,7 +9,9 @@ export default function Home({ data }) {
     <>
       <SEO title="index" />
       <div>
-        <Link to="/person/zoe">zoe</Link>
+        <Link className={styles.red} to="/person/zoe">
+          zoe
+        </Link>
         <Link to="/person/joy">joy</Link>
         <p>{data.site.siteMetadata.author}</p>
         <p>{data.site.siteMetadata.title}</p>

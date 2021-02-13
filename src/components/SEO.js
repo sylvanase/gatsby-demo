@@ -2,7 +2,7 @@
  * @Author: sylvanas
  * @Date: 2021-02-13 15:05:22
  * @LastEditors: sylvanas
- * @LastEditTime: 2021-02-13 15:14:53
+ * @LastEditTime: 2021-02-13 15:15:59
  * @Description:
  */
 import React from "react"
@@ -37,7 +37,7 @@ export default function SEO({ title, description, meta, lang }) {
 }
 
 SEO.defaultProps = {
-  description: "test",
+  description: "test2222",
   meta: [
     {
       name: "tea",
